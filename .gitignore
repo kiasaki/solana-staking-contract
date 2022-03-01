@@ -1,0 +1,6 @@
+.anchor
+.DS_Store
+**/*.rs.bk
+node_modules
+programs/staking/target
+target

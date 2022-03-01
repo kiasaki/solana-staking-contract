@@ -1,0 +1,17 @@
+[programs.localnet]
+staking = "BKDN5ZyBsuC7EBCtvPfgGsvTAuHSXDE5Sh5V8HskQGU8"
+
+[registry]
+url = "https://psytrbhymqlkfrhudd.dev.genesysgo.net:8899/"
+
+[provider]
+cluster = "localnet"
+wallet = "staking.json"
+commitment = "confirmed"
+
+[features]
+anchor-debug = ["anchor-syn/anchor-debug"]
+
+[scripts]
+test = "yarn run ts-mocha --provider.cluster -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+init = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 ./scripts/init.ts"
